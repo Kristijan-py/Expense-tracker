@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Expense tracker</title>
+        <link rel ='stylesheet' href="style.css" /> <!--Calling the CSS file-->
+    </head>
+    <body>
+        <div class="container">
+            <h1>Expense tracker</h1>
+            <form id="expense-form">
+                <input type="text" id='expense-name-input' placeholder="Expense" />
+                <input type="number" id="expense-amount-input" placeholder="Amount" />
+                <button type="submit">Add expense</button>
+            </form>
+
+            <h2>Expenses</h2>
+            <ul id="expense-list">
+                <!--From the input, the expenses will be added here-->
+            </ul>
+
+            <div id="total">
+                <h3>Total: <span id='total-amount'>0</span> денари</h3>
+            </div>
+        </div>
+        <script src="script.js"></script> <!--Calling the JS file-->
+    </body>
+</html>
